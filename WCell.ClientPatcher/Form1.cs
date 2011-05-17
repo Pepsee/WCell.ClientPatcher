@@ -14,10 +14,10 @@ namespace WCell.ClientPatcher
 
         private void Patch_Click(object sender, EventArgs e)
         {
+            richTextBox1.AppendText("Patching in progress, please wait...\n");
             string result;
             var patcher = new ClientPatcher(fileName);
-            patcher.Patch(out result);
-            richTextBox1.AppendText(result);
+            patcher.Patch(richTextBox1);
         }
 
         private void Open_Click(object sender, EventArgs e)
