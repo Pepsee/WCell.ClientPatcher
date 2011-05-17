@@ -172,7 +172,7 @@ namespace WCell.ClientPatcher
             }
             catch (Exception ex)
             {
-                _richTextBox.AppendText(ex.Message + Environment.NewLine);
+                WriteLine("Patching failed: " + ex.Message);
                 return false;
             }
 
