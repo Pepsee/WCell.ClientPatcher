@@ -1,0 +1,10 @@
+*.suo
+*.user
+*.cache
+*_ReSharper.*
+*.vs10x
+*.bak
+
+/_ReSharper.WCell.ClientPatcher
+/WCell.ClientPatcher/obj
+/WCell.ClientPatcher/bin
